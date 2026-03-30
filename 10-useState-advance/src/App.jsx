@@ -1,20 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
- const App = () => {
-  const [num, setNum] = useState([10,20,30])
-
-  const btnClicked = () => {
-    const newNum = [...num]
-    newNum.push(99)
-    setNum(newNum)
-
-  }
-  
+export const App = () => {
   return (
-    <div>
-      <h1>{num}</h1>
-      <button onClick={btnClicked}>Click me</button>
-    </div>
+    <div>App</div>
   )
 }
-export default App
